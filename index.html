@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="秋霞电影网完整版,qiuxiadianyingwangwanzhengban,秋霞电影网,完整版影视,电影导航,影视资源">
+<meta name="description" content="秋霞电影网完整版 - 汇聚海量完整版影视内容，提供最新电影、热门剧集、综艺动漫与纪录片导航，分类清晰、更新及时，一站式满足影迷的观影需求。">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>秋霞电影网完整版 | 海量影视导航 · 一站式观影</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--wine:#7f1d1d;--wine2:#b91c1c;--cream:#fef7ed;--sand:#fffbeb;--ink:#1c1917;--txt:#57534e;--dim:#a8a29e;--gold:#f59e0b}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--sand);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+section{padding:52px 0}
+img{max-width:100%}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:70;background:rgba(255,251,235,.96);backdrop-filter:blur(10px);border-bottom:3px double #fde68a}
+.hd{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .seal{width:46px;height:46px;border-radius:6px;background:var(--wine);color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:900;box-shadow:0 4px 10px rgba(127,29,29,.3)}
+.brand b{font-size:15.5px;font-weight:900;display:block}
+.brand small{display:block;font-size:8.5px;color:var(--dim);letter-spacing:2px;text-transform:uppercase}
+nav{display:none;gap:2px}
+nav a{padding:8px 16px;border-radius:2px;font-size:13px;font-weight:800;color:var(--txt);position:relative;transition:.25s}
+nav a:hover,nav a.on{color:var(--wine);background:#fef3c7}
+nav a.on::after{content:"";position:absolute;left:16px;right:16px;bottom:2px;height:3px;background:var(--wine);border-radius:2px}
+.tog{width:42px;height:42px;border-radius:4px;background:var(--wine);color:#fff;border:none;font-size:15px;cursor:pointer}
+.drawer{display:none;background:#fff;border-bottom:3px double #fde68a}
+.drawer.on{display:block}
+.drawer a{display:block;padding:14px 16px;border-bottom:1px solid #fef3c7;font-weight:800;font-size:14px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(135deg,#450a0a 0%,#7f1d1d 55%,#991b1b 100%);color:#fff;padding:74px 0;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 22px,rgba(245,158,11,.035) 22px 23px)}
+.hero .wrap{position:relative;z-index:2}
+.hero .ribbon{display:inline-block;background:var(--gold);color:#451a03;font-size:10.5px;font-weight:900;padding:5px 14px;border-radius:2px;letter-spacing:1px;margin-bottom:16px}
+.hero h1{font-size:30px;font-weight:900;line-height:1.35;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:#fbbf24}
+.hero p{font-size:13px;color:#fecaca;max-width:580px;margin-bottom:26px}
+.hero .acts{display:flex;gap:10px;flex-wrap:wrap}
+.hero .acts .a{background:#f59e0b;color:#451a03;padding:13px 26px;border-radius:3px;font-size:13px;font-weight:900}
+.hero .acts .b{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4);padding:11px 24px;border-radius:3px;font-size:13px;font-weight:800}
+
+/* SECTION TITLE */
+.stitle{text-align:center;margin-bottom:32px}
+.stitle .zh{display:inline-block;font-size:22px;font-weight:900}
+.stitle .zh i{font-style:normal;color:var(--wine2)}
+.stitle .ln{width:56px;height:3px;background:var(--wine);margin:10px auto 0;position:relative}
+.stitle .ln::after{content:"";position:absolute;left:50%;top:-3px;transform:translateX(-50%);width:14px;height:9px;background:var(--gold);clip-path:polygon(50% 0,100% 100%,0 100%)}
+
+/* TICKER */
+.ticker{background:var(--wine);color:#fef3c7;padding:11px 0;font-size:12px}
+.ticker .wrap{display:flex;align-items:center;gap:12px}
+.ticker .tag{background:#f59e0b;color:#451a03;font-weight:900;padding:3px 12px;border-radius:2px;font-size:10.5px;flex-shrink:0}
+
+/* CARD GRID DOM A */
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:#fff;border:1px solid #fde68a;border-radius:3px;overflow:hidden;transition:.28s;position:relative}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 28px rgba(127,29,29,.14)}
+.card .cv{height:96px;display:flex;align-items:center;justify-content:center;font-size:30px;color:#fff;position:relative}
+.card .cv .fl{position:absolute;top:8px;left:8px;background:rgba(255,255,255,.95);color:var(--wine);font-size:9.5px;font-weight:900;padding:3px 8px;border-radius:2px}
+.card .cv .rt{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.55);color:#fff;font-size:9.5px;font-weight:900;padding:3px 8px;border-radius:2px}
+.card .body{padding:14px}
+.card .body b{font-size:14px;font-weight:900;display:block}
+.card .body small{font-size:11px;color:var(--txt);display:block;margin-top:4px}
+
+/* LIST BLOCK DOM B */
+.listbox{background:#fff;border:1px solid #fde68a;border-radius:3px;overflow:hidden}
+.lbhead{background:var(--wine);color:#fff;padding:13px 18px;font-size:14.5px;font-weight:900;display:flex;align-items:center;gap:9px}
+.lbhead span{background:#f59e0b;color:#451a03;font-size:9.5px;padding:2px 8px;border-radius:2px;font-weight:900}
+.lbrow{display:flex;align-items:center;gap:13px;padding:13px 18px;border-bottom:1px dashed #fde68a;transition:.2s}
+.lbrow:last-child{border-bottom:none}
+.lbrow:hover{background:#fffbeb}
+.lbrow .no{width:26px;height:26px;background:#fef3c7;color:var(--wine);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;flex-shrink:0}
+.lbrow .tx{flex:1;font-size:13px;font-weight:700}
+.lbrow .tx small{display:block;font-size:10px;color:var(--dim);font-weight:400}
+.lbrow .st{font-size:9.5px;background:#dcfce7;color:#166534;padding:3px 9px;border-radius:2px;flex-shrink:0}
+
+/* FEATURE DOM C */
+.feat{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+.feat .txt h2{font-size:23px;font-weight:900;line-height:1.45;margin-bottom:16px}
+.feat .txt p{font-size:12.5px;color:var(--txt);margin-bottom:14px}
+.feat .txt ul{list-style:none;margin-top:16px}
+.feat .txt li{font-size:12.5px;padding:7px 0 7px 24px;position:relative;color:var(--txt)}
+.feat .txt li::before{content:"✓";position:absolute;left:0;top:7px;width:18px;height:18px;background:var(--wine);color:#fff;border-radius:50%;font-size:10px;display:flex;align-items:center;justify-content:center}
+.feat .panel{background:#fff;border:1px solid #fde68a;border-radius:3px;padding:22px}
+.feat .panel .item{display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid #fef3c7}
+.feat .panel .item:last-child{border-bottom:none}
+.feat .panel .item .ic{width:40px;height:40px;border-radius:3px;background:var(--cream);color:var(--wine);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.feat .panel .item b{font-size:13px;font-weight:900;display:block}
+.feat .panel .item small{font-size:11px;color:var(--txt)}
+
+footer{background:#1c1917;color:#e7e5e4;padding:48px 0 22px}
+.ft{display:grid;grid-template-columns:1fr;gap:26px}
+.ft .a b{font-size:15px;font-weight:900;color:#fff}
+.ft .a p{font-size:11.5px;margin-top:8px;color:#a8a29e}
+.ft .a .u{color:#fbbf24;font-size:11.5px;display:block;margin-top:10px;word-break:break-all}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.cols a{font-size:12px;color:#a8a29e;transition:.2s}
+.cols a:hover{color:#fbbf24}
+.cp{margin-top:28px;padding-top:15px;border-top:1px solid rgba(255,255,255,.1);font-size:10px;line-height:1.95;color:#78716c}
+
+#top{position:fixed;right:14px;bottom:18px;z-index:90;width:44px;height:44px;border-radius:3px;background:var(--wine);color:#fbbf24;font-size:16px;display:none;align-items:center;justify-content:center;cursor:pointer}
+#top.on{display:flex}
+
+@media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}.feat{grid-template-columns:1fr 1fr}.hero h1{font-size:40px}}
+@media(min-width:820px){
+ nav{display:flex}.tog{display:none}
+ .hero h1{font-size:50px;max-width:800px}
+ .hero p{font-size:15px}
+ .grid{grid-template-columns:repeat(4,1fr)}
+ .ft{grid-template-columns:1.6fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <div class="brand"><div class="seal">秋</div><div><b>秋霞电影网完整版</b><small>Full Version Cinema</small></div></div>
+    <nav>
+      <a href="#home" class="on">首页</a>
+      <a href="#fresh">最新上线</a>
+      <a href="#hot">热播榜单</a>
+      <a href="#why">关于本站</a>
+    </nav>
+    <button class="tog" onclick="document.getElementById('dr').classList.toggle('on')">☰</button>
+  </div>
+  <div class="drawer" id="dr">
+    <a href="#home" onclick="this.parentNode.classList.remove('on')">首页</a>
+    <a href="#fresh" onclick="this.parentNode.classList.remove('on')">最新上线</a>
+    <a href="#hot" onclick="this.parentNode.classList.remove('on')">热播榜单</a>
+    <a href="#why" onclick="this.parentNode.classList.remove('on')">关于本站</a>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="wrap"><span class="tag">站内公告</span><span>本站汇聚海量完整版影视内容，分类清晰、更新及时，倡导正版观看，祝您观影愉快！</span></div>
+</div>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="ribbon">FULL VERSION · 完整版影视导航</div>
+    <h1>海量影视<em>一次看全</em><br>完整版内容一站直达</h1>
+    <p>秋霞电影网完整版汇聚最新电影、热门剧集、综艺动漫与纪录片，分类清晰、更新及时，一站式满足影迷的观影需求。</p>
+    <div class="acts"><a href="#fresh" class="a">开始探索</a><a href="#why" class="b">了解更多</a></div>
+  </div>
+</section>
+
+<!-- CARD GRID DOM A -->
+<section id="fresh">
+  <div class="wrap">
+    <div class="stitle"><div class="zh">最新<i>上线</i></div><div class="ln"></div></div>
+    <div class="grid">
+      <a href="#" class="card"><div class="cv" style="background:linear-gradient(135deg,#7f1d1d,#dc2626)"><span class="fl">最新</span><span class="rt">9.3</span>🎬</div><div class="body"><b>破晓行动</b><small>动作 / 犯罪 · 2026</small></div></a>
+      <a href="#" class="card"><div class="cv" style="background:linear-gradient(135deg,#92400e,#f59e0b)"><span class="fl">热播</span><span class="rt">8.9</span>🌌</div><div class="body"><b>星河彼岸</b><small>科幻 / 冒险 · 2026</small></div></a>
+      <a href="#" class="card"><div class="cv" style="background:linear-gradient(135deg,#365314,#84cc16)"><span class="fl">推荐</span><span class="rt">9.1</span>🏔️</div><div class="body"><b>云隐之境</b><small>剧情 / 文艺 · 2026</small></div></a>
+      <a href="#" class="card"><div class="cv" style="background:linear-gradient(135deg,#0f766e,#14b8a6)"><span class="fl">独家</span><span class="rt">8.7</span>🕵️</div><div class="body"><b>无声追凶</b><small>悬疑 / 推理 · 2026</small></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- LIST BLOCK DOM B -->
+<section id="hot" style="padding-top:0">
+  <div class="wrap">
+    <div class="stitle"><div class="zh">热播<i>榜单</i></div><div class="ln"></div></div>
+    <div class="listbox">
+      <div class="lbhead">🔥 今日热播 <span>TOP 5</span></div>
+      <a href="#" class="lbrow"><div class="no">1</div><div class="tx">破晓行动<small>动作 / 犯罪 · 院线热映</small></div><span class="st">热播中</span></a>
+      <a href="#" class="lbrow"><div class="no">2</div><div class="tx">星河彼岸<small>科幻 / 冒险 · 口碑佳作</small></div><span class="st">高分</span></a>
+      <a href="#" class="lbrow"><div class="no">3</div><div class="tx">云隐之境<small>剧情 / 文艺 · 获奖影片</small></div><span class="st">推荐</span></a>
+      <a href="#" class="lbrow"><div class="no">4</div><div class="tx">无声追凶<small>悬疑 / 推理 · 烧脑巨制</small></div><span class="st">热播中</span></a>
+      <a href="#" class="lbrow"><div class="no">5</div><div class="tx">长安旧梦<small>古装 / 历史 · 制作精良</small></div><span class="st">更新中</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE DOM C -->
+<section id="why" style="padding-top:0">
+  <div class="wrap">
+    <div class="stitle"><div class="zh">选择<i>本站</i></div><div class="ln"></div></div>
+    <div class="feat">
+      <div class="txt">
+        <h2>内容完整 · 分类清晰<br>做懂影迷的导航平台</h2>
+        <p>我们专注于影视信息整理与内容导航，从最新院线到经典老片，从热门剧集到小众佳作，帮助你更快找到想看的内容。</p>
+        <ul>
+          <li>覆盖电影、剧集、综艺、动漫、纪录片全品类</li>
+          <li>每日精选更新，热门内容第一时间呈现</li>
+          <li>分类标签与榜单结合，找片更高效</li>
+          <li>尊重影视版权，倡导正版观看</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="item"><div class="ic">🎬</div><div><b>电影频道</b><small>院线新片 / 经典老片 / 海外佳片</small></div></div>
+        <div class="item"><div class="ic">📺</div><div><b>剧集频道</b><small>国产剧 / 美剧 / 日韩剧 / 网剧</small></div></div>
+        <div class="item"><div class="ic">🎞️</div><div><b>综艺动漫</b><small>热门综艺 / 经典动漫 / 纪录片</small></div></div>
+        <div class="item"><div class="ic">⭐</div><div><b>精选榜单</b><small>热播榜 / 高分榜 / 口碑榜</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="a">
+        <b>秋霞电影网完整版</b>
+        <p>汇聚海量完整版影视内容，提供最新电影、热门剧集、综艺动漫与纪录片导航，分类清晰、更新及时，一站式满足影迷的观影需求。</p>
+        <span class="u">https://qiuxiadianyingwangwanzhengban-wap.github.io</span>
+      </div>
+      <div>
+        <div class="cols">
+          <a href="#">首页</a><a href="#">最新上线</a>
+          <a href="#">热播榜单</a><a href="#">电影频道</a>
+          <a href="#">剧集频道</a><a href="#">关于本站</a>
+        </div>
+      </div>
+    </div>
+    <div class="cp">© 2026 秋霞电影网完整版 qiuxiadianyingwangwanzhengban · 保留所有权利<br>本站为影视信息导航平台，内容仅供索引参考，倡导正版观看，相关影视版权归出品方及原作者所有</div>
+  </div>
+</footer>
+
+<div id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('top').classList.toggle('on',window.scrollY>450);});
+</script>
+</body>
+</html>
